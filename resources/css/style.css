@@ -1,0 +1,46 @@
+/* universal rules */
+
+html {
+  font-family: Helvetica;
+  font-size: 18px;
+  color: white;
+}
+
+body {
+  width: 960px;
+}
+
+/* header rules */
+
+.header {
+  display: flex;
+  background-color: black;
+}
+
+.header logo_img {
+  display: flex;
+  height: 1.5rem;
+  padding-left: 0.5rem;
+  padding-right: 1rem;
+}
+
+.header name {
+  display: flex;
+  padding-top: 0.66rem;
+  padding-bottom: 0.66rem;
+  font-size: 1rem;
+}
+
+/* hero section rules */
+
+
+/* navigation rules */
+
+
+/* gallery rules */
+
+
+/* biz info rules */
+
+
+/* footer rules */
