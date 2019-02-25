@@ -1,31 +1,40 @@
 /* universal rules */
 
 html {
-  font-family: Helvetica;
   font-size: 18px;
   color: white;
-}
-
-body {
-  width: 960px;
+  font-family: Helvetica;
 }
 
 /* header rules */
 
 .header {
   display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 3rem;
+  align-items: center;
   background-color: black;
 }
 
-.header logo_img {
+.logo {
   display: flex;
+  flex-direction: column;
   height: 1.5rem;
+  width: 1rem;
+  margin-left: 10%;
   padding-left: 0.5rem;
   padding-right: 1rem;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/secret-agent-supply/resources/images/logo.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
-.header name {
+.name {
   display: flex;
+  flex-direction: column;
+  width: 10rem;
   padding-top: 0.66rem;
   padding-bottom: 0.66rem;
   font-size: 1rem;
@@ -33,14 +42,210 @@ body {
 
 /* hero section rules */
 
+/* ******** font weight bold issue ******* */
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 25rem;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg");
+  background-size: cover;
+}
+
+.titlebox {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+  margin-top: 9rem;
+  margin-bottom: 4.5rem;
+  height: 11.5rem;
+  width: 25rem;
+  background-color: black;
+}
+
+.title1 {
+  display: flex;
+  flex-direction: column;
+  height: 1rem;
+  width: 20rem;
+  margin-top: 2rem;
+  margin-left: 3rem;
+}
+
+.title2 {
+  display: flex;
+  flex-direction: column;
+  height: 2rem;
+  width: 20rem;
+  margin-top: 0.25rem;
+  margin-left: 3rem;
+  font-size: 2rem;
+}
 
 /* navigation rules */
 
+.navigation {
+  display: flex;
+  flex-direction: row;
+  height: 2.5rem;
+  background-color: firebrick;
+}
 
-/* gallery rules */
+.nav_items {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
 
+ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 
-/* biz info rules */
+}
+/* gallery rules 18rem */
 
+.gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 18rem;
+  background-color: white;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin-top: 3rem;
+  border: 4px solid black;
+}
+
+.item_title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  height: 1.25rem;
+  width: 100%;
+  background-color: black;
+}
+
+.pen_img {
+  display: flex;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/secret-agent-supply/resources/images/pen.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 9rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.watch_img {
+  display: flex;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/secret-agent-supply/resources/images/watch.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 9rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.glasses_img {
+  display: flex;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/secret-agent-supply/resources/images/glasses.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 60%;
+  height: 9rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 3rem;
+}
+
+/* biz info rules 11rem */
+
+.biz_info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 11rem;
+  background-color: white;
+}
+
+.info_box {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  width: 35%;
+}
+
+.info_title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 3rem;
+  padding-left: 2rem;
+  width: 90%;
+  background-color: black;
+}
+
+.info  {
+  display: flex;
+  flex-direction: column;
+  height: 1.5rem;
+  padding-top: 0.25rem;
+  width: 100%;
+  color: black;
+}
 
 /* footer rules */
+
+.footer {
+  display: flex;
+  height: 5rem;
+  width: 100%;
+  background-color: black;
+}
+
+.copyright {
+  display: flex;
+  height: 5rem;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10%;
+}
+
+
+/* screen-size rules */
+
+@@media screen only and (max-width: 960px) {
+
+}
+
+@@media screen only and (max-width: 960px) and (min-width: 480px) {
+
+}
+
+@@media screen only and (max-width: 480px) {
+
+}
